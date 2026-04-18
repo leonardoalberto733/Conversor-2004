@@ -1,0 +1,24 @@
+{
+  "name": "conversor-2004",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardoalberto733/Conversor-2004.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/leonardoalberto733/Conversor-2004/issues"
+  },
+  "homepage": "https://github.com/leonardoalberto733/Conversor-2004#readme",
+  "dependencies": {
+    "hangul-js": "^0.2.6"
+  }
+}

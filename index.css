@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(97, 97, 207);
+}
+
+#input{
+    width: 600px;
+    margin: auto;
+    background-color: rgba(0, 255, 255, 0);
+    text-align: center;
+}
+
+input{
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+button{
+    background-color: green;
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+
+#saida{
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+}
