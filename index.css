@@ -1,5 +1,6 @@
 body{
     background-color: rgb(97, 97, 207);
+    padding-top: 50px;
 }
 
 #input{
@@ -17,7 +18,7 @@ input{
 }
 
 button{
-    background-color: green;
+    background-color: rgb(72, 185, 72);
     width: 60px;
     height: 30px;
     border-radius: 5px;
@@ -29,4 +30,7 @@ button{
     height: 300px;
     border-radius: 10px;
     background-color: white;
+    font-size: 25px;
+    padding: 10px;
+    margin: auto;
 }

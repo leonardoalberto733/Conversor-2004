@@ -10,6 +10,17 @@ input.addEventListener("keydown", function(event) {
     }
 });
 
+input.addEventListener("keydown", function(event) {
+    if (event.key === "Backspace" && event.ctrlKey) {
+        console.log("Ctrl + Backspace pressionado!");
+        apagar();
+    }
+});
+
+window.apagar = function(){
+    let conteudo = saida.innerText;
+    saida.innerText = conteudo.slice(0, conteudo.length - 1)
+}
 
 window.conversor = function (){
     let saida = document.querySelector("#saida");
@@ -37,12 +48,20 @@ window.triador = function(texto){
         }else if (palavra[0] == "#"){
             
         }else{
-            let inicial = palavra.slice(0, 1).toUpperCase();
-            console.log(inicial);
-            for(let x = 0; x <= Kanji[inicial].length - 1; x++){
-                if (Kanji[inicial][x].frente == palavra){
-                    palavrasConvertidas += Kanji[inicial][x].verso;
-                } 
+            if(!["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "ç", "ã", "õ"].includes(palavra[0])){
+                for(let x = 0; x <= Kanji.W.length - 1; x++){
+                    if (Kanji.W[x].frente == palavra){
+                        palavrasConvertidas += Kanji.W[x].verso;
+                    } 
+                }
+            }else{
+                let inicial = palavra.slice(0, 1).toUpperCase();
+                console.log(inicial);
+                for(let x = 0; x <= Kanji[inicial].length - 1; x++){
+                    if (Kanji[inicial][x].frente == palavra){
+                        palavrasConvertidas += Kanji[inicial][x].verso;
+                    } 
+                }
             }
         }
     })
