@@ -268,7 +268,11 @@ function hangulConv(partes) {
          jamos = [];
     }
 
-    return palavra;
+    let palavraConcatenada = "";
+    palavra.map((l) => {
+        palavraConcatenada += l;
+    })
+    return palavraConcatenada;
 
 }
 
