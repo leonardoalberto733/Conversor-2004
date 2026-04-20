@@ -289,8 +289,8 @@ let Kanji = {
         {frente: "diminuir", verso: "劇"},
         {frente: "dinheiro", verso: "錢"},
         {frente: "direcao", verso: "膨"},
-        {frente: "direita sub.", verso: "傘"},
-        {frente: "direito adj./sub.", verso: "翠"},
+        {frente: "direita", verso: "傘"},
+        {frente: "direito", verso: "翠"},
         {frente: "disso", verso: "先"},
         {frente: "divertir", verso: "游"},
         {frente: "dizer", verso: "言"},
@@ -1072,6 +1072,7 @@ let Kanji = {
         {frente: ".", verso: "。"},
         {frente: "..", verso: "・"},
         {frente: ",", verso: "、"},
+        {frente: ";", verso: "ゝ"},
         {frente: "!", verso: "！"},
         {frente: "?", verso: "？"},
         {frente: "_", verso: "ー"},
@@ -1081,7 +1082,8 @@ let Kanji = {
         {frente: ")", verso: "）"},
         {frente: "[", verso: "「"},
         {frente: "]", verso: "」"},
-        {frente: "-", verso: "々"},
+        {frente: "-", verso: "々"}, 
+        {frente: "/", verso: "／"},
         {frente: "0", verso: "０"},
         {frente: "1", verso: "１"},
         {frente: "2", verso: "２"},
@@ -1092,6 +1094,8 @@ let Kanji = {
         {frente: "7", verso: "７"},
         {frente: "8", verso: "８"},
         {frente: "9", verso: "９"},
+        {frente: "//", verso: "\n"},
+
     ]
 }
 

@@ -8,7 +8,7 @@ function separarHangul (bruto){
     let comeco = 0;
 
     for(let x = 0; x <= bruto.length - 1; x++){
-        if (bruto[x] === "-"){
+        if (bruto[x] === "."){
             letra = bruto.slice(comeco, x);
             comeco = x + 1;
             letras.push(letra);
@@ -92,8 +92,6 @@ function hangulConv(partes) {
                 }
             }
         }else{ 
-
-            //ㅂㅈㄷㄱㅅㄴㅇㄹㅎㅋㅌㅊㅍㅃㅉㄸㄲㅆ
             if(['l', 'r', 's', 'm', 'n'].includes(partes[x][0]) && partes[x].length == 1){
                 switch (partes[x][0]){
                     case "l" : jamos = ['ㅁ', 'ㅡ', 'ㅊ'];
@@ -158,6 +156,8 @@ function hangulConv(partes) {
                         case "b" : jamos[0] = "ㅇ";
                         break;
                         case "s" : jamos[0] = "ㄹ";
+                        break;
+                        case "ç" : jamos[0] = "ㄹ";
                         break;
                         case "g" : jamos[0] = "ㅎ";
                         break;
