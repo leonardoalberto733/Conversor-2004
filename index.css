@@ -1,17 +1,53 @@
 body{
     background-color: rgb(97, 97, 207);
     padding-top: 50px;
-    background-image: url(imagens/img2.jpg);
-    background-size: cover;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: top center;
 }
 
+#btnMenu{
+   position:fixed;
+   top: 30px;
+   left: 30px; 
+   transition: left 0.3s ease; /* animação suave */
+   z-index: 20;
+
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* escondido fora da tela */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    transition: left 0.3s ease; /* animação suave */
+    z-index: 10;
+}
+
+#menu a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#inputTransparencia{
+    width: 200px;
+    margin-left: 20px;
+}
+
+
 #input{
-    width: 600px;
+    width: 630px;
     background-color: rgba(0, 255, 255, 0);
     text-align: center;
     position: fixed;
     left:50%;
     transform: translate(-50%, 0);
+    display: flex;
+    gap: 5px;
 
 }
 
@@ -20,21 +56,36 @@ input{
     border-radius: 5px;
     margin-bottom: 20px;
     width: 300px;
+    flex: 6;
+    border: none;
 }
 
 button{
-    background-color: rgb(72, 185, 72);
     width: 60px;
     height: 30px;
     border-radius: 5px;
+    border:none;
+}
+#btnConv{
+    background-color: aqua;
+    flex: 1;
 
 }
-
+#btnBackground{
+    background-color: rgb(66, 66, 171);
+    width: 100px;
+    color: white;
+}
+#btnConv:hover{
+    background-color: rgb(7, 180, 180);
+}
+#btnBackground:hover{
+    background-color: rgb(5, 5, 156);
+}
 #saida{
     width: 600px;
     min-height: 300px;
     border-radius: 10px;
-    background-color: white;
     font-size: 25px;
     padding: 10px;
     margin: auto;

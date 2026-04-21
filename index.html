@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="converter.png" type="image/png">
 </head>
-<body>
+<body id="corpo" style="background-image: url(imagens/img2.jpg);">
+    <button id="btnMenu" onclick="toggleMenu()">☰</button>
+    <div id="menu">
+        <input  type="range" name="transparencia" id="inputTransparencia" min="0" max="100" value="80" onchange="transparencia()">
+        <button id="btnBackground" onclick="trocaImagem()">Background</button>
+    </div>
+
     <div id="input">
         <input autocomplete="off" id="entrada" placeholder="digite aqui">
-        <button  onclick="conversor()">conv</button>
-    </div>
-    <div id="saida"></div>
+        <button id="btnConv" onclick="conversor()">conv</button>
 
-    <script type="module" src="Geral.js"></script>
+    </div>
+    <div id="saida" style="background-color: rgba(255, 255, 255, 0.8);"></div>
+    
+    <script type="module" src="scripts/Pagina.js"></script>
+    <script type="module" src="scripts/Geral.js"></script>
 </body>
 </html>
