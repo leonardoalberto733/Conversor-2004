@@ -24,7 +24,7 @@ window.apagar = function(){
 
 window.conversor = function (){
     let saida = document.querySelector("#saida");
-    let texto = input.value;
+    let texto = input.value.toLowerCase();
     let codificado = "";
 
     input.value = "";
