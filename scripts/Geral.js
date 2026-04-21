@@ -22,6 +22,14 @@ window.apagar = function(){
     saida.innerText = conteudo.slice(0, conteudo.length - 1)
 }
 
+function removerAcentos(texto) {
+    return texto
+        .normalize("NFD")                // separa letras de acentos
+        .replace(/[\u0300-\u036f]/g, "") // remove os acentos
+        .replace(/ç/g, "c")              // trata o ç
+        .replace(/Ç/g, "C");
+}
+
 window.conversor = function (){
     let saida = document.querySelector("#saida");
     let texto = input.value.toLowerCase();
@@ -51,6 +59,7 @@ window.triador = function(texto){
         }else if(palavra[0] == "\\"){
             palavrasConvertidas += palavra.slice(1, palavra.length);
         }else{
+            palavra = removerAcentos(palavra);
             if(!["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "ç", "ã", "õ"].includes(palavra[0])){
                 for(let x = 0; x <= Kanji.W.length - 1; x++){
                     if (Kanji.W[x].frente == palavra){

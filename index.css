@@ -70,6 +70,13 @@ button{
     flex: 1;
 
 }
+#btnApagar {
+    background-color: rgb(187, 28, 28);
+    color: white;
+}
+#btnApagar:hover{
+    background-color: rgb(103, 0, 0);
+}
 #btnBackground{
     background-color: rgb(66, 66, 171);
     width: 100px;
