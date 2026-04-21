@@ -173,6 +173,7 @@ let Kanji = {
         {frente: "chuva", verso: "雨"},
         {frente: "cidade", verso: "國"},
         {frente: "cima", verso: "傑"},
+        {frente: "cinco", verso: "五"},
         {frente: "cinza", verso: "鼡"},
         {frente: "claro", verso: "借"},
         {frente: "coisa", verso: "物"},
@@ -297,6 +298,7 @@ let Kanji = {
         {frente: "do", verso: "同"},
         {frente: "doce", verso: "亰"},
         {frente: "doer", verso: "難"},
+        {frente: "dois", verso: "二"},
         {frente: "domingo", verso: "智"},
         {frente: "dor", verso: "渡"},
         {frente: "dormir", verso: "寝"},
@@ -335,7 +337,7 @@ let Kanji = {
         {frente: "entre", verso: "假"},
         {frente: "entregar", verso: "讖"},
         {frente: "enxergar", verso: "覽"},
-        {frente: "era verb.", verso: "村"},
+        {frente: "era", verso: "村"},
         {frente: "eram", verso: "射"},
         {frente: "eramos", verso: "討"},
         {frente: "errar", verso: "瀑"},
@@ -704,6 +706,7 @@ let Kanji = {
         {frente: "nossas", verso: "桟"},
         {frente: "nosso", verso: "洩"},
         {frente: "nossos", verso: "旺"},
+        {frente: "nove", verso: "九"},
         {frente: "novo", verso: "当"},
         {frente: "num", verso: "代父"},
         {frente: "numa", verso: "代平"},
@@ -719,6 +722,7 @@ let Kanji = {
         {frente: "obvio", verso: "與"},
         {frente: "odiar", verso: "段"},
         {frente: "odio", verso: "没"},
+        {frente: "oito", verso: "八"},
         {frente: "olhar", verso: "眼"},
         {frente: "olhar2", verso: "筧"},
         {frente: "olho", verso: "目"},
@@ -839,6 +843,7 @@ let Kanji = {
         {frente: "quarta-feira", verso: "四追"},
         {frente: "quarto", verso: "部"},
         {frente: "quase", verso: "理"},
+        {frente: "quatro", verso: "四"},
         {frente: "que2", verso: "虫"},
         {frente: "que", verso: "文"},
         {frente: "quebrar", verso: "荒"},
@@ -909,6 +914,7 @@ let Kanji = {
         {frente: "seguranca", verso: "翼"},
         {frente: "segurar", verso: "驀"},
         {frente: "seguro", verso: "翕"},
+        {frente: "seis", verso: "六"},
         {frente: "selvagem", verso: "驫"},
         {frente: "sem", verso: "固"},
         {frente: "semana", verso: "週"},
@@ -923,6 +929,7 @@ let Kanji = {
         {frente: "ser", verso: "欠"},
         {frente: "serio", verso: "讐"},
         {frente: "servir", verso: "綴"},
+        {frente: "sete", verso: "七"},
         {frente: "seu", verso: "前"},
         {frente: "seus", verso: "煎"},
         {frente: "sexta-feira", verso: "六追"},
@@ -1003,6 +1010,7 @@ let Kanji = {
         {frente: "travesseiro", verso: "纂"},
         {frente: "trazer", verso: "蜂"},
         {frente: "tremer", verso: "骸"},
+        {frente: "tres", verso: "三"},
         {frente: "triste", verso: "悲"},
         {frente: "tristeza", verso: "黐"},
         {frente: "trocar", verso: "纐"},
@@ -1016,6 +1024,7 @@ let Kanji = {
         {frente: "ultima", verso: "電"},
         {frente: "ultimo", verso: "震"},
         {frente: "um", verso: "父"},
+        {frente: "um2", verso: "一"},
         {frente: "uma2", verso: "式"},
         {frente: "uma", verso: "平"},
         {frente: "unha", verso: "毬"},
@@ -1095,7 +1104,12 @@ let Kanji = {
         {frente: "8", verso: "８"},
         {frente: "9", verso: "９"},
         {frente: "//", verso: "\n"},
+        //一二三四五六七八九〇
 
+    ],
+
+    Z:[
+        {frente: "zero", verso: "〇"},
     ]
 }
 

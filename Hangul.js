@@ -257,6 +257,8 @@ function hangulConv(partes) {
                         break;
                         case "n": jamos[2] = "ㅍ";
                         break;
+                        case "l": jamos[2] = "ㅊ";
+                        break;
                     }
                 }
 

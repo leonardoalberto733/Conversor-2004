@@ -47,9 +47,9 @@ let Katakana = [
     {frente: "ho", verso: "ホ"},
 
     {frente: "ta", verso: "タ"},
-    {frente: "te", verso: "チ"},
-    {frente: "ti", verso: "ツ"},
-    {frente: "tu", verso: "テ"},
+    {frente: "te", verso: "テ"},
+    {frente: "ti", verso: "チ"},
+    {frente: "tu", verso: "ツ"},
     {frente: "to", verso: "ト"},
 
     {frente: "ma", verso: "マ"},
