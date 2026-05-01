@@ -27,7 +27,7 @@ body{
     text-align: center;
 }
 
-#menu > label {
+#menu label {
     color: white;
     font-size: 20px;
 }
@@ -50,7 +50,7 @@ body{
 
 }
 
-input{
+#entrada{
     height: 30px;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -78,17 +78,34 @@ button{
     background-color: rgb(103, 0, 0);
 }
 #btnBackground{
+    margin-top: 15px;
     background-color: rgb(66, 66, 171);
     width: 100px;
     color: white;
 }
+#btnBackground:hover{
+    background-color: rgb(5, 5, 156);
+}
 #btnConv:hover{
     background-color: rgb(7, 180, 180);
 }
-#btnBackground:hover{
-    background-color: rgb(5, 5, 156);
-    margin: auto;
+
+
+#selecionarOrientacao{
+    margin-top:15px;
+    background-color: rgba(0, 0, 255, 0);
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
 }
+#selecionarOrientacao > div{
+
+}
+#selecionarOrientacao label{
+    display: block;
+    color: white;;
+}
+
 #saida{
     width: 600px;
     min-height: 300px;

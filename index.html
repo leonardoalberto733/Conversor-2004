@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="converter.png" type="image/png">
 </head>
-<body id="corpo" style="background-image: url(imagens/img2.jpg);">
+<body id="corpo" style="background-image: url(imagens/img9.jpg);">
     <button id="btnMenu" onclick="toggleMenu()">☰</button>
     <div id="menu">
-        <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:151px;height:50px;"src="https://www.clocklink.com/html5embed.php?clock=008&timezone=BRST&color=black&size=151&Title=&Message=&Target=&From=2026,1,1,0,0,0&Color=black"></iframe>
         <label for="inputTransparencia">Transparência</label>
         <input  type="range" name="transparencia" id="inputTransparencia" min="0" max="100" value="80" onchange="transparencia()">
         <button id="btnBackground" onclick="trocaImagem()">Background</button>
+
+        <div id="selecionarOrientacao">
+            <div>
+                <label for="btnVertical">Vertical</label>
+                <input type="radio" name="vert-hori" id="btnVertical" onchange="mudarOrientacao()">
+            </div>
+            <div>
+                <label for="btnHorizontal">Horizontal</label>
+                <input type="radio" name="vert-hori" id="btnHorizontal" onchange="mudarOrientacao()" checked>
+            </div>
+        </div>
+
     </div>
 
     <div id="input">
         
-        <input autocomplete="off" id="entrada" placeholder="digite aqui">
+        <input id="entrada" autocomplete="off" id="entrada" placeholder="digite aqui">
         <button id="btnConv" onclick="conversor()">conv</button>
         <button id="btnApagar" onClick="apagar()">delete</button>
 
