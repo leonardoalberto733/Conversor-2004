@@ -36,7 +36,13 @@ function transparencia(){
     const saida = document.querySelector("#saida");
     let valor = Number(input.value) / 100;
 
-    saida.style.backgroundColor = `rgba(255, 255, 255, ${valor})`
+    const numeros = saida.style.backgroundColor.match(/[\d.]+/g).map(Number);
+
+    const r = numeros[0];
+    const g = numeros[1];
+    const b = numeros[2];
+
+    saida.style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${valor})`;
 }
 
 function mudarOrientacao() {
@@ -47,7 +53,7 @@ function mudarOrientacao() {
     if (selecionado.id === "btnVertical") {
         saida.style.writingMode = 'vertical-lr';
         saida.style.textOrientation = 'upright';
-        saida.style.maxHeight = "300px";
+        saida.style.maxHeight = "500px";
         saida.style.overflowX = "auto";
         saida.style.paddingRight = "150px";
 
@@ -60,9 +66,33 @@ function mudarOrientacao() {
     }
 }
 
+function mudarCorLetra(){
+    const corLetra = document.querySelector('#corLetra').value;
+    const saida = document.querySelector('#saida');
+    saida.style.color = corLetra;
+
+    console.log(corLetra);
+}
+
+function mudarCorFundo(){
+    const corFundo = document.querySelector('#corFundo').value;
+    const saida = document.querySelector('#saida');
+
+    const numeros = saida.style.backgroundColor.match(/[\d.]+/g).map(Number);
+
+    const r = parseInt(corFundo.slice(1, 3), 16);
+    const g = parseInt(corFundo.slice(3, 5), 16);
+    const b = parseInt(corFundo.slice(5, 7), 16);
+
+    saida.style.backgroundColor = (`rgba(${r}, ${g}, ${b}, ${numeros[3]})`);
+}
+
 window.trocaImagem = trocaImagem;
 window.toggleMenu = toggleMenu;
 window.transparencia = transparencia;
 window.mudarOrientacao = mudarOrientacao;
+window.mudarCorLetra = mudarCorLetra;
+window.mudarCorFundo = mudarCorFundo;
+
 
 export { trocaImagem, toggleMenu, transparencia, mudarOrientacao };

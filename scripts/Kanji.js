@@ -1092,6 +1092,7 @@ let Kanji = {
         {frente: "[", verso: "「"},
         {frente: "]", verso: "」"},
         {frente: "-", verso: "々"}, 
+        {frente: "~", verso: "〜"},
         {frente: "/", verso: "／"},
         {frente: "0", verso: "０"},
         {frente: "1", verso: "１"},

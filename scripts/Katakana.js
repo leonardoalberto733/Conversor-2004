@@ -130,14 +130,38 @@ let Katakana = [
     {frente: "ve", verso: "ヴェ"},
     {frente: "vo", verso: "ヴォ"},
 
+    {frente: "sha", verso: "己ァ"},
+    {frente: "shi", verso: "己ィ"},
+    {frente: "shu", verso: "己ゥ"},
+    {frente: "she", verso: "己ェ"},
+    {frente: "sho", verso: "己ォ"},
+
+    {frente: "lha", verso: "凡ァ"},
+    {frente: "lhi", verso: "凡ィ"},
+    {frente: "lhu", verso: "凡ゥ"},
+    {frente: "lhe", verso: "凡ェ"},
+    {frente: "lho", verso: "凡ォ"},
+
+    {frente: "nha", verso: "丸ァ"},
+    {frente: "nhi", verso: "丸ィ"},
+    {frente: "nhu", verso: "丸ゥ"},
+    {frente: "nhe", verso: "丸ェ"},
+    {frente: "nho", verso: "丸ォ"},
+
 
     {frente: "n", verso: "ン"},
     {frente: "s", verso: "久"},
     {frente: "l", verso: "几"},
     {frente: "r", verso: "攵"},
+    {frente: "f", verso: "巾"},
+    {frente: "h", verso: "ッ"},
+
+
     {frente: "xl", verso: "ヮ"},
     {frente: "xr", verso: "ヶ"},
     {frente: "xrr", verso: "ヵ"},
+    {frente: "xux", verso: "ョ"},
+
     {frente: "ã", verso: "ュ"},
     {frente: "ão", verso: "ォ"},
     {frente: "ãe", verso: "ェ"},

@@ -29,3 +29,12 @@ Para texto literal
 Enter para converter;
 
 Ctrl + Backspace para apagar o texto já convertido;
+
+
+
+## Coisas para mudar
+- adicionar os katakanas que faltam
+- adicionar os kanjis que faltam, principalmente: "nos", "nas" e "há"
+- permitir escolher a cor da letra
+- permitir escolher a cor do fundo
+- permitir escolher o tamanho da letra

@@ -8,7 +8,7 @@ body{
 
 #btnMenu{
    position:fixed;
-   top: 30px;
+   top: 20px;
    left: 30px; 
    transition: left 0.3s ease; /* animação suave */
    z-index: 20;
@@ -98,12 +98,18 @@ button{
     justify-content: space-around;
     gap:20px;
 }
-#selecionarOrientacao > div{
 
-}
 #selecionarOrientacao label{
     display: block;
     color: white;;
+}
+
+#selecionarCores{
+    display: flex;
+    margin-top: 20px;
+}
+#selecionarCores > div > input{
+    margin-top: 10px;
 }
 
 #saida{

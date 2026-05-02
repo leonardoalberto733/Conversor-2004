@@ -32,7 +32,7 @@ function removerAcentos(texto) {
 
 window.conversor = function (){
     let saida = document.querySelector("#saida");
-    let texto = input.value.toLowerCase();
+    let texto = input.value;
     let codificado = "";
 
     input.value = "";
@@ -50,16 +50,17 @@ window.triador = function(texto){
 
     palavrasOrigninais.map((palavra) => {
         if (palavra[0] == "*"){
+            palavra = palavra.toLowerCase();
             console.log(hangulConv(separarHangul(palavra.slice(1, palavra.lenth))));
             let convertido = hangulConv(separarHangul(palavra.slice(1, palavra.length)));
             palavrasConvertidas += convertido;
         }else if (palavra[0] == "#"){
-            console.log("funcionando");
+            palavra = palavra.toLowerCase();
             palavrasConvertidas += convKatakana(palavra.slice(1, palavra.length))
         }else if(palavra[0] == "\\"){
             palavrasConvertidas += palavra.slice(1, palavra.length);
         }else{
-            palavra = removerAcentos(palavra);
+            palavra = removerAcentos(palavra).toLowerCase();
             if(!["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z", "ç", "ã", "õ"].includes(palavra[0])){
                 for(let x = 0; x <= Kanji.W.length - 1; x++){
                     if (Kanji.W[x].frente == palavra){
